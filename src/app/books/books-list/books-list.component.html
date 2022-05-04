@@ -1,0 +1,25 @@
+<div fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="30px">
+  <div fxLayout="column" class="book-card-container" fxLayoutGap="5px">
+    <mat-card
+      *ngFor="let book of books"
+      class="book-card"
+      fxLayout="row wrap"
+      fxLayoutAlign="right center"
+    >
+      <mat-card-header class="book-header">
+        <div mat-card-avatar class="book-header-image">
+          <img
+            [src]="book.volumeInfo.imageLinks.thumbnail"
+            [alt]="book.volumeInfo.title"
+          />
+        </div>
+        <mat-card-title>{{
+          book.volumeInfo.title ?? "No title found"
+        }}</mat-card-title>
+        <mat-card-subtitle>{{
+          book.volumeInfo.authors ?? "No authors found"
+        }}</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+  </div>
+</div>

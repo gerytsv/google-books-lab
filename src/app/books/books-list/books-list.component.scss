@@ -1,0 +1,50 @@
+:host {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.book-list-header {
+  width: 500px;
+}
+
+.book-card-container {
+  width: 500px;
+  margin-bottom: 30px;
+}
+
+.book-card {
+  width: 100%;
+  padding: 10px;
+}
+
+.book-card:hover {
+  background-color: lightgoldenrodyellow;
+}
+
+
+.book-header {
+  width: 70%;
+}
+
+.book-header-image {
+  margin-right: 15px;
+}
+
+.book-header-image.mat-card-avatar img {
+  width:60px;
+
+}
+
+.mat-card-image:first-child {
+  overflow: hidden;
+  border-radius: 5px;
+  margin-left: -15px;
+  margin-top:  0;
+  background: transparent;
+}
+
+.icon-button {
+  min-width: 3em;
+  padding: 0px;
+}
